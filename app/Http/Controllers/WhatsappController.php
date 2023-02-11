@@ -18,6 +18,6 @@ class WhatsappController extends Controller
 
         Whatsapp::create($req);
 
-        return $array;
+        return $request->input('hub_challenge');
     }
 }
